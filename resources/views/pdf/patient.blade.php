@@ -56,7 +56,7 @@
         .invoice tbody tr {
             text-align: center;
             min-height: 20px;
-            height: 40px;
+            height: 30px;
             font-size: 15px;
             padding: 5px;
             background-color: lightgray;
@@ -124,7 +124,7 @@
         The certificate validity on <br>
         Laboratory Director  {{env('APP_URL')}}
     </p>
-    <img src="{{env('APP_URL')}}/shtamb.png"  style="height: auto;float: right">
+    <img src="{{env('APP_URL')}}/shtamb.png"  style="position: absolute;top: 0;left: 500px">
 </div>
 
 
