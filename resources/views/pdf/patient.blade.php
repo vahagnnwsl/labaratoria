@@ -29,6 +29,7 @@
         }
         .invoice table {
             margin: 15px;
+            margin-top: 0!important;
         }
         h3 {
             margin-left: 15px;
@@ -50,7 +51,7 @@
             color: white;
             padding: 5px;
             height: 20px;
-            font-size: 15px;
+            font-size: 12px;
         }
 
         .invoice tbody tr {
@@ -69,16 +70,16 @@
 
 
 <div class="information" style="padding: 10px">
-    <p style="width: 100%;padding: 10px;font-size: 15px;color: black;margin-left: 20%">
+    <p style="width: 100%;padding-left: 10px;font-size: 15px;color: black;margin-left: 20%;padding-top: 0!important;">
         <strong>Name:</strong> {{$model->full_name}}
     </p>
-    <p style="width: 100%;padding: 10px;font-size: 15px;color: black;margin-left: 20%">
+    <p style="width: 100%;padding-left: 10px;font-size: 15px;color: black;margin-left: 20%;padding-top: 0!important;">
         <strong>Sex:</strong> {{$model->sex}}
     </p>
-    <p style="width: 100%;padding: 10px;font-size: 15px;color: black;margin-left: 20%">
+    <p style="width: 100%;padding-left: 10px;font-size: 15px;color: black;margin-left: 20%;padding-top: 0!important;">
         <strong>Date of birth:</strong> {{$model->birth_day->format('d.m.Y')}}
     </p>
-    <p style="width: 100%;padding: 10px;font-size: 15px;color: black;margin-left: 20%">
+    <p style="width: 100%;padding-left: 10px;font-size: 15px;color: black;margin-left: 20%;padding-top: 0!important;">
         <strong>Passport number:</strong> {{$model->passport_number}}
     </p>
 </div>
@@ -100,7 +101,7 @@
         <tbody>
         <tr>
             <td>Coronavirus COVID-19 (SARS-CoV-2, RNA)</td>
-            <td>Coronavirus COVID-19 (SARS-CoV-2, RNA)</td>
+            <td>Real-Time RT-PCR; Amplication: DTprime (DT-96) DNA Technology</td>
             <td>{{$model->date_and_time_of_sample_collection->format('d.m.Y H:m')}}</td>
             <td>{{$model->date_and_time_of_result_report->format('d.m.Y H:m')}}</td>
             <td>Negative</td>
@@ -109,22 +110,23 @@
 
         </tbody>
 
-
     </table>
-    <p style="width: 100%;padding: 20px;font-size: 15px">
-        <strong>This test was performed by using a test system by DNA-Technology (Russia) (sensitivity>97%, specicity>98%)</strong><br>
-        Helix is a reference laboratories for coronavirus (COVID-19) testing results, according to the Decision of Rospatrennadzor Directorate of 2020.04.28
+    <p style="width: 100%;padding: 10px;font-size: 13px">
+        Sample type: oropharyngeal swab, nasopharyngeal swab <br>
+
+    <strong>This test was performed by using a test system by DNA-Technology (Russia) (sensitivity>97%, specicity>98%)</strong><br>
+        Euromed Laboratories is a reference laboratories for coronavirus (COVID-19) testing results, according to the Decision of Rospatrennadzor Directorate of 2020.04.28
     </p>
 </div>
 
-<div style="padding: 20px;position: relative">
+<div style="padding-left: 20px;padding-top:5px;position: relative">
     <img src="{{url($model->qrCode)}}"  style="height: auto;margin-top: 5px">
-    <p style="position: absolute;top: 110px;left: 20px;font-size: 10px">
+    <p style="position: absolute;top: 90px;left: 20px;font-size: 10px">
         Scan the QR-code to verify <br>
         The certificate validity on <br>
         Laboratory Director  https://euromed-lab.com
     </p>
-    <img src="{{env('APP_URL')}}/shtamb.png"  style="position: absolute;top: 0;left: 500px">
+    <img src="{{env('APP_URL')}}/shtamb.png"  style="position: absolute;top: -10px;left: 500px">
 </div>
 
 
