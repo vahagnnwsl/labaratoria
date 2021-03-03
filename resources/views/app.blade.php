@@ -53,7 +53,7 @@
 
     @stack('css')
 </head>
-<body class="bg-light">
+<body class="bg-light" style="background-color: white!important;">
 
 <div class="container">
     <main>
@@ -70,7 +70,7 @@
     </main>
 
     <footer class="my-5 pt-5 text-muted text-center text-small">
-        <p class="mb-1">&copy; 2017–2021 Company Name</p>
+        <p class="mb-1">Euromed Laboratories</p>
 
     </footer>
 </div>
