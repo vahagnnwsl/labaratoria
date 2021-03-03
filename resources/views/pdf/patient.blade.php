@@ -122,7 +122,7 @@
     <p style="position: absolute;top: 110px;left: 20px;font-size: 10px">
         Scan the QR-code to verify <br>
         The certificate validity on <br>
-        Laboratory Director  {{env('APP_URL')}}
+        Laboratory Director  https://euromed-lab.com
     </p>
     <img src="{{env('APP_URL')}}/shtamb.png"  style="position: absolute;top: 0;left: 500px">
 </div>

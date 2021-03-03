@@ -32,7 +32,6 @@
             </div>
         </div>
 
-        <a href="/" class="card_els d-flex flex-column p-3" style="font-size: 27px;">Back to website euromed-lab.com</a>
     </div>
 
 @endsection

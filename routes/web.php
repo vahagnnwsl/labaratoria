@@ -13,6 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [\App\Http\Controllers\PatientController::class,'create']);
+Route::get('/qwertyformgenerator', [\App\Http\Controllers\PatientController::class,'create']);
 Route::post('/patient', [\App\Http\Controllers\PatientController::class,'store'])->name('patient.store');
 Route::get('/patient/{hash}', [\App\Http\Controllers\PatientController::class,'show'])->name('patient.show');
