@@ -80,7 +80,7 @@
                             </thead>
                             <tbody>
                             @foreach($patients as $patient)
-                                <tr class="{{$patient->status === 0?'new':''}}">
+                                <tr class="{{!$patient->status ? 'new': '' }}">
                                     <td style="font-size: 1rem"  >
 
                                        #
