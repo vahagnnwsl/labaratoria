@@ -108,7 +108,7 @@
 
                                         <div class="form-group">
                                             <label for="flight_date">Flight date </label>
-                                            <input type="date" id="flight_date" class="form-control" name="flight_date"  value="{{$patient->flight_date->format('Y-m-d')}}">
+                                            <input type="date" id="flight_date" class="form-control" name="flight_date"  value="{{$patient->flight_date ? $patient->flight_date->format('Y-m-d') : ''}}">
 
                                             @error('flight_date')
                                             <span class="invalid-feedback d-block" role="alert">
@@ -119,7 +119,7 @@
 
                                         <div class="form-group">
                                             <label for="date_and_time_of_sample_collection">Date and time of sample collection *</label>
-                                            <input type="datetime-local" id="date_and_time_of_sample_collection" class="form-control" name="date_and_time_of_sample_collection"  value="{{$patient->date_and_time_of_sample_collection->format('Y-m-d\TH:s')}}">
+                                            <input type="datetime-local" id="date_and_time_of_sample_collection" class="form-control" name="date_and_time_of_sample_collection"  value="{{$patient->date_and_time_of_sample_collection->format('Y-m-d\TH:i')}}">
 
                                             @error('date_and_time_of_sample_collection')
                                             <span class="invalid-feedback d-block" role="alert">
@@ -130,7 +130,7 @@
 
                                         <div class="form-group">
                                             <label for="date_and_time_of_result_report">Date and time of result report *</label>
-                                            <input type="datetime-local" id="date_and_time_of_result_report" class="form-control" name="date_and_time_of_result_report"  value="{{$patient->date_and_time_of_result_report->format('Y-m-d\TH:s')}}">
+                                            <input type="datetime-local" id="date_and_time_of_result_report" class="form-control" name="date_and_time_of_result_report"  value="{{$patient->date_and_time_of_result_report->format('Y-m-d\TH:i')}}">
 
                                             @error('date_and_time_of_result_report')
                                             <span class="invalid-feedback d-block" role="alert">

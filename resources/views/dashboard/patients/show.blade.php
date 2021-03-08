@@ -57,17 +57,17 @@
                                     </tr>
                                     <tr>
                                         <th class="pl-0 w-25" scope="row"><strong>Flight day</strong></th>
-                                        <td>{{$patient->flight_date->format('d.m.Y')}}</td>
+                                        <td>{{$patient->flight_date ? $patient->flight_date->format('d.m.Y') : ''}}</td>
                                     </tr>
                                     <tr>
                                         <th class="pl-0 w-25" scope="row"><strong>Date and time of sample
                                                 collection</strong></th>
-                                        <td>{{$patient->date_and_time_of_sample_collection->format('d.m.Y H:s')}}</td>
+                                        <td>{{$patient->date_and_time_of_sample_collection->format('d.m.Y H:i')}}</td>
                                     </tr>
                                     <tr>
                                         <th class="pl-0 w-25" scope="row"><strong>Date and time of result
                                                 report</strong></th>
-                                        <td>{{$patient->date_and_time_of_result_report->format('d.m.Y H:s')}}</td>
+                                        <td>{{$patient->date_and_time_of_result_report->format('d.m.Y H:i')}}</td>
                                     </tr>
 
 
