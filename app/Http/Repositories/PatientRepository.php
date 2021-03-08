@@ -7,13 +7,23 @@ use App\Models\Patient;
 
 class PatientRepository
 {
+
+
     /**
-     * @param array $requestData
      * @return mixed
      */
-    public function store(array $requestData)
+    public function getAll()
     {
-       return  Patient::create($requestData);
+        return Patient::orderByDesc('created_at')->paginate(20);
+    }
+
+
+    /**
+     * @param array $requestData
+     */
+    public function store(array $requestData): void
+    {
+        Patient::create($requestData);
     }
 
 
@@ -25,5 +35,27 @@ class PatientRepository
     {
 
         return Patient::whereHash($hash)->first();
+    }
+
+    /**
+     * @param int $id
+     * @return mixed
+     */
+    public function getById(int $id)
+    {
+
+        return Patient::whereId($id)->first();
+    }
+
+    /**
+     * @param int $id
+     */
+    public function updateStatus(int $id) :void
+    {
+        $model = $this->getById($id);
+        if ($model) {
+            $model->update(['status' => 1]);
+        }
+
     }
 }

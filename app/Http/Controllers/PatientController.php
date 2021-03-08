@@ -25,6 +25,7 @@ class PatientController extends Controller
 
     }
 
+
     /**
      * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
      */
@@ -37,21 +38,16 @@ class PatientController extends Controller
 
     /**
      * @param PatientRequest $request
-     * @return mixed
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function store(PatientRequest $request)
     {
 
-        $model = $this->patientRepository->store($request->validated());
+        $this->patientRepository->store($request->validated());
 
+        session()->flash('success', 'Successfully created');
 
-        session()->flash('success', 'Successfully created' );
-
-
-        $pdf =  PDF::loadHTML(view('pdf.patient', compact('model')))->setPaper('a4', 'portrait')->setWarnings(false);
-
-        return $pdf->download($model->passport_number.'.pdf');
-
+        return redirect()->back();
     }
 
     /**

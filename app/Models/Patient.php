@@ -19,6 +19,10 @@ class Patient extends Model
         'hash',
         'date_and_time_of_sample_collection',
         'date_and_time_of_result_report',
+        'flight_date',
+        'flight',
+        'status',
+        'whats_app',
         'birth_day'
     ];
 
@@ -31,6 +35,7 @@ class Patient extends Model
         'date_and_time_of_sample_collection' => 'datetime',
         'date_and_time_of_result_report' => 'datetime',
         'birth_day' => 'datetime',
+        'flight_date' => 'datetime'
     ];
 
     public static function boot()

@@ -27,7 +27,7 @@
                 @csrf
                 <fieldset>
                     <div class="mb-3">
-                        <label for="full_name" class="form-label">Full name</label>
+                        <label for="full_name" class="form-label">Full name *</label>
                         <input type="text" id="full_name" class="form-control" name="full_name"
                                value="{{old('full_name')}}">
 
@@ -36,11 +36,23 @@
                              <strong>{{ $message }}</strong>
                            </span>
                         @enderror
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="whats_app" class="form-label">Whats app *</label>
+                        <input type="text" id="whats_app" class="form-control" name="whats_app"
+                               value="{{old('whats_app')}}">
+
+                        @error('whats_app')
+                        <span class="invalid-feedback d-block" role="alert">
+                             <strong>{{ $message }}</strong>
+                           </span>
+                        @enderror
 
                     </div>
 
                     <div class="mb-3">
-                        <label for="birth_day" class="form-label">Birth day</label>
+                        <label for="birth_day" class="form-label">Birth day *</label>
                         <input type="date" id="birth_day" class="form-control" name="birth_day"
                                value="{{old('birth_day')}}">
 
@@ -53,7 +65,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="sex" class="form-label">Sex</label>
+                        <label for="sex" class="form-label">Sex *</label>
                         <select class="form-control" id="sex" name="sex">
                             <option>Choose</option>
                             <option value="male" {{old('sex') === 'male'?'selected':''}}>Male</option>
@@ -69,7 +81,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <label for="passport_number" class="form-label">Passport number</label>
+                        <label for="passport_number" class="form-label">Passport number *</label>
                         <input type="text" id="passport_number" class="form-control" name="passport_number" value="{{old('passport_number')}}">
 
                         @error('passport_number')
@@ -77,12 +89,35 @@
                             <strong>{{ $message }}</strong>
                          </span>
                         @enderror
-
                     </div>
 
                     <div class="mb-3">
+                        <label for="flight" class="form-label">Flight</label>
+                        <input type="text" id="flight" class="form-control" name="flight" value="{{old('flight')}}">
+
+                        @error('flight')
+                        <span class="invalid-feedback d-block" role="alert">
+                            <strong>{{ $message }}</strong>
+                         </span>
+                        @enderror
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="flight_date" class="form-label">Flight date</label>
+                        <input type="datetime-local" id="flight_date" class="form-control"
+                               name="flight_date" value="{{old('flight_date')}}">
+
+                        @error('flight_date')
+                        <span class="invalid-feedback d-block" role="alert">
+                             <strong>{{ $message }}</strong>
+                           </span>
+                        @enderror
+                    </div>
+
+
+                    <div class="mb-3">
                         <label for="date_and_time_of_sample_collection" class="form-label">Date and time of sample
-                            collection</label>
+                            collection *</label>
                         <input type="datetime-local" id="date_and_time_of_sample_collection" class="form-control"
                                name="date_and_time_of_sample_collection" value="{{old('date_and_time_of_sample_collection')}}">
 
@@ -96,7 +131,7 @@
 
                     <div class="mb-3">
                         <label for="date_and_time_of_result_report" class="form-label">Date and time of result
-                            report</label>
+                            report *</label>
                         <input type="datetime-local" id="date_and_time_of_result_report" class="form-control"
                                name="date_and_time_of_result_report" value="{{old('date_and_time_of_result_report')}}">
 
