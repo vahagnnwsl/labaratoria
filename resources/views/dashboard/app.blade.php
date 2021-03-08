@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>NWS LAB</title>
+    <title>Euromed</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -165,7 +165,7 @@
     <loader></loader>
 
     <footer class="main-footer">
-        <strong>Copyright © 2014-2021 <a href="http://nwslab.com" target="_blank">NWS LAB</a>.</strong>
+        <strong>Copyright © 2014-2021 <a href="#" target="_blank">Euromed</a>.</strong>
         All rights reserved.
         <div class="float-right d-none d-sm-inline-block">
             <b>Version</b> 1.0.0
