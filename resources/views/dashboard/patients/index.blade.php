@@ -104,7 +104,7 @@
                                         {{$patient->flight}}
                                     </td>
                                     <td>
-                                        {{$patient->flight_date->format('M d , Y')}}
+                                        {{$patient->flight_date ? $patient->flight_date->format('M d , Y') : ''}}
                                     </td>
                                     <td>
                                         {{$patient->date_and_time_of_sample_collection->format('M d , Y H:s')}}
