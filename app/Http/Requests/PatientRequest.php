@@ -33,8 +33,8 @@ class PatientRequest extends FormRequest
             'sex' => 'required||in:male,female',
             'birth_day' => 'required|date_format:Y-m-d',
             'flight_date' => 'sometimes|date_format:Y-m-d|nullable',
-            'date_and_time_of_sample_collection' => 'required|date_format:Y-m-d\TH:s',
-            'date_and_time_of_result_report' => 'required|date_format:Y-m-d\TH:s',
+            'date_and_time_of_sample_collection' => 'required|date_format:Y-m-d\TH:i',
+            'date_and_time_of_result_report' => 'required|date_format:Y-m-d\TH:i',
         ];
     }
 }

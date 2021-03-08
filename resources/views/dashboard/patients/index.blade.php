@@ -107,10 +107,10 @@
                                         {{$patient->flight_date ? $patient->flight_date->format('M d , Y') : ''}}
                                     </td>
                                     <td>
-                                        {{$patient->date_and_time_of_sample_collection->format('M d , Y H:s')}}
+                                        {{$patient->date_and_time_of_sample_collection->format('M d , Y H:i')}}
                                     </td>
                                     <td>
-                                        {{$patient->date_and_time_of_result_report->format('M d , Y H:s')}}
+                                        {{$patient->date_and_time_of_result_report->format('M d , Y H:i')}}
                                     </td>
                                     <td>
                                         {{$patient->created_at->format('M d Y')}}

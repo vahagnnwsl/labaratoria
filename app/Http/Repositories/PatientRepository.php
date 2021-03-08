@@ -33,7 +33,6 @@ class PatientRepository
      */
     public function getByHash(string $hash)
     {
-
         return Patient::whereHash($hash)->first();
     }
 
