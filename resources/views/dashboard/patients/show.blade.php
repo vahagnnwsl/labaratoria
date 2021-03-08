@@ -28,8 +28,16 @@
                                 <table class="table table-sm table-borderless mb-0">
                                     <tbody>
                                     <tr>
+                                        <th class="pl-0 w-25" scope="row"><strong>Hash</strong></th>
+                                        <td>{{$patient->hash}}</td>
+                                    </tr>
+                                    <tr>
                                         <th class="pl-0 w-25" scope="row"><strong>Full name</strong></th>
                                         <td>{{$patient->full_name}}</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="pl-0 w-25" scope="row"><strong>Whats app</strong></th>
+                                        <td>{{$patient->whats_app}}</td>
                                     </tr>
                                     <tr>
                                         <th class="pl-0 w-25" scope="row"><strong>Passport number</strong></th>

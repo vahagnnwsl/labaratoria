@@ -45,7 +45,9 @@ class PatientController extends Controller
 
         $this->patientRepository->store($request->validated());
 
-        session()->flash('success', 'Successfully created');
+        session()->flash('success', 'Для получения документа переведите 3000 рублей на "Сбер" по номеру +79624908515, и пришлите снимок - подтверждение платежа на этот же номер по WhatsApp.
+Ответным сообщением вы получите сертификат с QR кодом, который активен для проверки 72 часа.
+При прохождении проверок показывайте сертификат на телефоне или можете распечатать.');
 
         return redirect()->back();
     }

@@ -50,7 +50,7 @@ class PatientRepository
     /**
      * @param int $id
      */
-    public function updateStatus(int $id) :void
+    public function updateStatus(int $id): void
     {
         $model = $this->getById($id);
         if ($model) {
@@ -58,4 +58,28 @@ class PatientRepository
         }
 
     }
+
+    /**
+     * @param $id
+     */
+    public function destroy($id): void
+    {
+        $model = $this->getById($id);
+        if ($model) {
+            $model->delete();
+        }
+    }
+
+    /**
+     * @param array $request
+     * @param int $id
+     */
+    public function update(array $request, int $id): void
+    {
+        $model = $this->getById($id);
+        if ($model) {
+            $model->update($request);
+        }
+    }
+
 }

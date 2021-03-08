@@ -40,8 +40,8 @@
                             <thead>
                             <tr>
 
-                                <th style="width: 10%">
-                                    Hash
+                                <th style="width: 5%">
+                                    #
                                 </th>
                                 <th style="width: 10%">
                                     Name
@@ -78,9 +78,9 @@
                             <tbody>
                             @foreach($patients as $patient)
                                 <tr >
-                                    <td>
+                                    <td style="font-size: 1rem">
 
-                                        {{$patient->hash}}
+                                       #
                                     </td>
                                     <td>
                                         {{$patient->full_name}}
@@ -113,9 +113,27 @@
                                         {{$patient->created_at->format('M d Y')}}
                                     </td>
                                     <td class=" project-actions text-right">
-                                <a class="btn btn-warning btn-sm" href="{{route('patients.pdf',$patient->id)}}">
-                                    <i class="fa fa-file-pdf"></i>
-                                </a>
+                                             <a class="btn btn-warning btn-sm" href="{{route('patients.pdf',$patient->id)}}">
+                                                 <i class="fa fa-file-pdf"></i>
+                                             </a>
+                                        <a class="btn btn-primary btn-sm" href="{{route('patients.edit',$patient->id)}}">
+                                            <i class="fa fa-edit"></i>
+                                        </a>
+                                        <a class="btn btn-info btn-sm" href="{{route('patients.show',$patient->id)}}">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+
+                                        <form method="POST" action="{{ route('patients.destroy',  $patient->id) }}"
+                                              accept-charset="UTF-8"
+                                              style="display:inline">
+                                            {{ method_field('DELETE') }}
+                                            {{ csrf_field() }}
+                                            <button type="submit" class="btn btn-danger btn-sm"
+                                                    title="Delete Permission"
+                                                    onclick="return confirm(&quot;Confirm delete?&quot;)">
+                                                <i class="fas fa-trash"> </i>
+                                            </button>
+                                        </form>
 
                                 </td>
                                 </tr>

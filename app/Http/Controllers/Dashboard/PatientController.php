@@ -84,6 +84,37 @@ class PatientController extends Controller
 
     }
 
+    /**
+     * @param int $id
+     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     */
+    public function edit(int $id)
+    {
+        $patient = $this->patientRepository->getById($id);
+
+        if (!$patient) {
+            abort(404);
+        }
+
+        return view('dashboard.patients.edit', compact('patient'));
+    }
+
+
+    /**
+     * @param PatientRequest $request
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function update(PatientRequest $request, $id)
+    {
+
+        $this->patientRepository->update($request->validated(), $id);
+
+        session()->flash('success', 'Successfully updated');
+
+        return redirect()->back();
+    }
+
 
     /**
      * @param $id
@@ -106,8 +137,22 @@ class PatientController extends Controller
     /**
      * @return \Symfony\Component\HttpFoundation\BinaryFileResponse
      */
-    public function export(){
-        return Excel::download(new PatientExport(), date('d-m-Y').'-patients.xlsx');
+    public function export()
+    {
+        return Excel::download(new PatientExport(), date('d-m-Y') . '-patients.xlsx');
     }
 
+
+    /**
+     * @param $id
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function destroy($id)
+    {
+
+        $this->patientRepository->destroy($id);
+        session()->flash('success', 'Successfully deleted');
+
+        return redirect()->route('patients.index');
+    }
 }
