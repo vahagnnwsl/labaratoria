@@ -102,8 +102,8 @@
         <tr>
             <td>Coronavirus COVID-19 (SARS-CoV-2, RNA)</td>
             <td>Real-Time RT-PCR; Amplication: DTprime (DT-96) DNA Technology</td>
-            <td>{{$model->date_and_time_of_sample_collection->format('d.m.Y H:m')}}</td>
-            <td>{{$model->date_and_time_of_result_report->format('d.m.Y H:m')}}</td>
+            <td>{{$model->date_and_time_of_sample_collection->format('d.m.Y H:i')}}</td>
+            <td>{{$model->date_and_time_of_result_report->format('d.m.Y H:i')}}</td>
             <td>Negative</td>
 
         </tr>
