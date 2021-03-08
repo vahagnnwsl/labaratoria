@@ -2,7 +2,7 @@
 @push('css')
     <style>
         .new {
-            background-color: #c1dec1!important;
+            background-color: #c1dec1 !important;
         }
     </style>
 
@@ -28,7 +28,7 @@
                         Add
                     </a>
 
-                    <a class="btn btn-primary btn-sm float-right mr-1"  href="{{route('patients.export')}}">
+                    <a class="btn btn-primary btn-sm float-right mr-1" href="{{route('patients.export')}}">
                         <i class="fas fa-file-download"></i>
                         Export Excel
                     </a>
@@ -81,9 +81,9 @@
                             <tbody>
                             @foreach($patients as $patient)
                                 <tr class="{{!$patient->status ? 'new': '' }}">
-                                    <td style="font-size: 1rem"  >
+                                    <td style="font-size: 1rem">
 
-                                       #
+                                        #
                                     </td>
                                     <td>
                                         {{$patient->full_name}}
@@ -116,13 +116,14 @@
                                         {{$patient->created_at->format('M d Y')}}
                                     </td>
                                     <td>
-                                        {{$patient->type=== 0?'User':'Admin'}}
+                                        {{!$patient->type?'User':'Admin'}}
                                     </td>
                                     <td class=" project-actions text-right">
-                                             <a class="btn btn-warning btn-sm" href="{{route('patients.pdf',$patient->id)}}">
-                                                 <i class="fa fa-file-pdf"></i>
-                                             </a>
-                                        <a class="btn btn-primary btn-sm" href="{{route('patients.edit',$patient->id)}}">
+                                        <a class="btn btn-warning btn-sm" href="{{route('patients.pdf',$patient->id)}}">
+                                            <i class="fa fa-file-pdf"></i>
+                                        </a>
+                                        <a class="btn btn-primary btn-sm"
+                                           href="{{route('patients.edit',$patient->id)}}">
                                             <i class="fa fa-edit"></i>
                                         </a>
                                         <a class="btn btn-info btn-sm" href="{{route('patients.show',$patient->id)}}">
@@ -141,7 +142,7 @@
                                             </button>
                                         </form>
 
-                                </td>
+                                    </td>
                                 </tr>
                             @endforeach
                             </tbody>
