@@ -106,7 +106,7 @@
 
                                         <div class="form-group">
                                             <label for="flight_date">Flight date </label>
-                                            <input type="datetime-local" id="flight_date" class="form-control" name="flight_date"  value="{{old('flight_date')}}">
+                                            <input type="date" id="flight_date" class="form-control" name="flight_date"  value="{{old('flight_date')}}">
 
                                             @error('flight_date')
                                             <span class="invalid-feedback d-block" role="alert">

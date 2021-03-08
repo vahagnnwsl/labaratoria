@@ -22,6 +22,7 @@ class Patient extends Model
         'flight_date',
         'flight',
         'status',
+        'type',
         'whats_app',
         'birth_day'
     ];

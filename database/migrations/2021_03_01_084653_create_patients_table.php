@@ -21,11 +21,12 @@ class CreatePatientsTable extends Migration
             $table->date('birth_day')->nullable();
             $table->dateTime('date_and_time_of_sample_collection')->nullable();
             $table->dateTime('date_and_time_of_result_report')->nullable();
-            $table->dateTime('flight_date')->nullable();
+            $table->date('flight_date')->nullable();
             $table->string('flight')->nullable();
             $table->string('whats_app')->nullable();
             $table->string('hash')->nullable()->unique();
             $table->tinyInteger('status')->default(0);
+            $table->tinyInteger('type')->default(0);
             $table->timestamps();
         });
     }

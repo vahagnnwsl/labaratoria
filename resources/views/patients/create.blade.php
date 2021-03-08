@@ -106,7 +106,7 @@
 
                             <div class="mb-3">
                                 <label for="flight_date" class="form-label">Дата вылета / Flight Date</label>
-                                <input type="datetime-local" id="flight_date" class="form-control"
+                                <input type="date" id="flight_date" class="form-control"
                                        name="flight_date" value="{{old('flight_date')}}">
 
                                 @error('flight_date')

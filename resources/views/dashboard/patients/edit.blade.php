@@ -107,8 +107,8 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label for="flight_date">Flight date {{$patient->flight_date}}</label>
-                                            <input type="datetime-local" id="flight_date" class="form-control" name="flight_date"  value="{{$patient->flight_date->format('Y-m-d\TH:s')}}">
+                                            <label for="flight_date">Flight date </label>
+                                            <input type="date" id="flight_date" class="form-control" name="flight_date"  value="{{$patient->flight_date->format('Y-m-d')}}">
 
                                             @error('flight_date')
                                             <span class="invalid-feedback d-block" role="alert">

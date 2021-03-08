@@ -53,11 +53,11 @@
                                     </tr>
                                     <tr>
                                         <th class="pl-0 w-25" scope="row"><strong>Birth day</strong></th>
-                                        <td>{{$patient->birth_day->format('d.m.Y H:s')}}</td>
+                                        <td>{{$patient->birth_day->format('d.m.Y')}}</td>
                                     </tr>
                                     <tr>
                                         <th class="pl-0 w-25" scope="row"><strong>Flight day</strong></th>
-                                        <td>{{$patient->flight_date->format('d.m.Y  H:s')}}</td>
+                                        <td>{{$patient->flight_date->format('d.m.Y')}}</td>
                                     </tr>
                                     <tr>
                                         <th class="pl-0 w-25" scope="row"><strong>Date and time of sample

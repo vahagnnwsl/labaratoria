@@ -73,12 +73,15 @@
                                 <th style="width: 5%">
                                     Created
                                 </th>
+                                <th style="width: 5%">
+                                    Type
+                                </th>
                             </tr>
                             </thead>
                             <tbody>
                             @foreach($patients as $patient)
-                                <tr >
-                                    <td style="font-size: 1rem">
+                                <tr class="{{$patient->status === 0?'new':''}}">
+                                    <td style="font-size: 1rem"  >
 
                                        #
                                     </td>
@@ -101,7 +104,7 @@
                                         {{$patient->flight}}
                                     </td>
                                     <td>
-                                        {{$patient->flight_date->format('M d , Y H:s')}}
+                                        {{$patient->flight_date->format('M d , Y')}}
                                     </td>
                                     <td>
                                         {{$patient->date_and_time_of_sample_collection->format('M d , Y H:s')}}
@@ -111,6 +114,9 @@
                                     </td>
                                     <td>
                                         {{$patient->created_at->format('M d Y')}}
+                                    </td>
+                                    <td>
+                                        {{$patient->type=== 0?'User':'Admin'}}
                                     </td>
                                     <td class=" project-actions text-right">
                                              <a class="btn btn-warning btn-sm" href="{{route('patients.pdf',$patient->id)}}">

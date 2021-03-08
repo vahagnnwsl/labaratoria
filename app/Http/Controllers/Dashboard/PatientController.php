@@ -56,7 +56,11 @@ class PatientController extends Controller
     public function store(PatientRequest $request)
     {
 
-        $this->patientRepository->store($request->validated());
+        $request = $request->validated();
+
+        $request['type'] = 1;
+
+        $this->patientRepository->store($request);
 
 
         session()->flash('success', 'Successfully created');
@@ -79,6 +83,7 @@ class PatientController extends Controller
         if (!$patient) {
             abort(404);
         }
+        $this->patientRepository->updateStatus($id);
 
         return view('dashboard.patients.show', compact('patient'));
 
@@ -95,6 +100,7 @@ class PatientController extends Controller
         if (!$patient) {
             abort(404);
         }
+        $this->patientRepository->updateStatus($id);
 
         return view('dashboard.patients.edit', compact('patient'));
     }
@@ -129,6 +135,7 @@ class PatientController extends Controller
 
         $this->patientRepository->updateStatus($id);
         $pdf = PDF::loadHTML(view('pdf.patient', compact('model')))->setPaper('a4', 'portrait')->setWarnings(false);
+        $this->patientRepository->updateStatus($id);
 
         return $pdf->download($model->passport_number . '.pdf');
     }

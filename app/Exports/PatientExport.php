@@ -47,7 +47,7 @@ class PatientExport implements FromCollection, WithMapping, WithHeadings
             $patient->passport_number,
             $patient->flight,
             $patient->birth_day->format('d-m-Y'),
-            $patient->flight_date->format('d-m-Y H:s'),
+            $patient->flight_date->format('d-m-Y'),
             $patient->date_and_time_of_sample_collection->format('d-m-Y H:s'),
             $patient->date_and_time_of_result_report->format('d-m-Y H:s'),
             $patient->created_at->format('d-m-Y H:s'),
