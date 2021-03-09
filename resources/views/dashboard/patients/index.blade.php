@@ -82,7 +82,6 @@
                             @foreach($patients as $patient)
                                 <tr class="{{!$patient->status ? 'new': '' }}">
                                     <td style="font-size: 1rem">
-
                                         #
                                     </td>
                                     <td>

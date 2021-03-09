@@ -117,31 +117,31 @@
                             </div>
 
 
-                            <div class="mb-3">
-                                <label for="date_and_time_of_sample_collection" class="form-label">Дата и время забора биоматериала / Date and time of sample collection *</label>
-                                <input type="datetime-local" id="date_and_time_of_sample_collection" class="form-control"
-                                       name="date_and_time_of_sample_collection" value="{{old('date_and_time_of_sample_collection')}}">
+{{--                            <div class="mb-3">--}}
+{{--                                <label for="date_and_time_of_sample_collection" class="form-label">Дата и время забора биоматериала / Date and time of sample collection *</label>--}}
+{{--                                <input type="datetime-local" id="date_and_time_of_sample_collection" class="form-control"--}}
+{{--                                       name="date_and_time_of_sample_collection" value="{{old('date_and_time_of_sample_collection')}}">--}}
 
-                                @error('date_and_time_of_sample_collection')
-                                <span class="invalid-feedback d-block" role="alert">
-                             <strong>{{ $message }}</strong>
-                           </span>
-                                @enderror
+{{--                                @error('date_and_time_of_sample_collection')--}}
+{{--                                <span class="invalid-feedback d-block" role="alert">--}}
+{{--                             <strong>{{ $message }}</strong>--}}
+{{--                           </span>--}}
+{{--                                @enderror--}}
 
-                            </div>
+{{--                            </div>--}}
 
-                            <div class="mb-3">
-                                <label for="date_and_time_of_result_report" class="form-label">Дата и время получения результата / Date and time of the report *</label>
-                                <input type="datetime-local" id="date_and_time_of_result_report" class="form-control"
-                                       name="date_and_time_of_result_report" value="{{old('date_and_time_of_result_report')}}">
+{{--                            <div class="mb-3">--}}
+{{--                                <label for="date_and_time_of_result_report" class="form-label">Дата и время получения результата / Date and time of the report *</label>--}}
+{{--                                <input type="datetime-local" id="date_and_time_of_result_report" class="form-control"--}}
+{{--                                       name="date_and_time_of_result_report" value="{{old('date_and_time_of_result_report')}}">--}}
 
-                                @error('date_and_time_of_result_report')
-                                <span class="invalid-feedback d-block" role="alert">
-                             <strong>{{ $message }}</strong>
-                           </span>
-                                @enderror
+{{--                                @error('date_and_time_of_result_report')--}}
+{{--                                <span class="invalid-feedback d-block" role="alert">--}}
+{{--                             <strong>{{ $message }}</strong>--}}
+{{--                           </span>--}}
+{{--                                @enderror--}}
 
-                            </div>
+{{--                            </div>--}}
 
                             <button type="submit" class="btn btn-success w-100">Submit</button>
                         </fieldset>
