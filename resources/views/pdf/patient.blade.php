@@ -115,7 +115,7 @@
         Sample type: oropharyngeal swab, nasopharyngeal swab <br>
 
     <strong>This test was performed by using a test system by DNA-Technology (Russia) (sensitivity>97%, specicity>98%)</strong><br>
-        Euromed Laboratories is a reference laboratories for coronavirus (COVID-19) testing results, according to the Decision of Rospatrennadzor Directorate of 2020.04.28
+        Euromed Laboratories is a reference laboratories for coronavirus (COVID-19) testing results, according to the Decision of Rospotrebnadzor Directorate of 2020.04.28
     </p>
 </div>
 
@@ -126,7 +126,7 @@
         The certificate validity on <br>
         Laboratory Director  https://euromed-lab.com
     </p>
-    <img src="{{env('APP_URL')}}/shtamb.png"  style="position: absolute;top: -10px;left: 500px">
+    <img src="{{env('APP_URL')}}/shtamb.png"  style="position: absolute;top: -10px;left: 500px;height: 200px">
 </div>
 
 
