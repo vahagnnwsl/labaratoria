@@ -128,33 +128,35 @@
         <div style="position:absolute;left:40.00px;top:218.56px" class="cls_006"><span
                 class="cls_006">Дата рождения:</span><span class="cls_005"> {{$patient->birth_day->format('d.m.Y')}}</span></div>
         <div style="position:absolute;left:40.00px;top:250.56px" class="cls_006"><span class="cls_006">Пол:</span></div>
-        <div style="position:absolute;left:80.00px;top:250.56px" class="cls_005"><span class="cls_005">{{$patient->sex === 'male'?'Мужской':'Женский'}}</span>
+        <div style="position:absolute;left:80.00px;top:250.56px" class="cls_005"><span class="cls_005">{{$patient->sex === 'male'?'Мужской':'Женский'}}</span></div>
+            <div style="position:absolute;left:40.00px;top:280.56px" class="cls_006"><span class="cls_006">Документ удостоверяющий личность:</span></div>
+            <div style="position:absolute;left:330.00px;top:278.56px" class="cls_005"><span class="cls_005">{{$patient->internal_doc_num }}</span></div>
         </div>
         @if($patient->medical_institution === 'clinic_1')
-            <div style="position:absolute;left:40.00px;top:286.56px" class="cls_005"><span
+            <div style="position:absolute;left:40.00px;top:316.56px" class="cls_005"><span
                     class="cls_005" style="font-weight: bold;">Первая вакцинация</span></div>
-            <div style="position:absolute;left:40.00px;top:310.56px" class="cls_006"><span class="cls_006">Медицинская организация:</span><span
+            <div style="position:absolute;left:40.00px;top:341.56px" class="cls_006"><span class="cls_006">Медицинская организация:</span><span
                     class="cls_005"> {{$clinics[$patient->medical_institution]['ru']}}</span></div>
-            <div style="position:absolute;left:40.00px;top:340.56px" class="cls_006"><span class="cls_006">Дата введения вакцины:</span><span
+            <div style="position:absolute;left:40.00px;top:370.56px" class="cls_006"><span class="cls_006">Дата введения вакцины:</span><span
                     class="cls_005"> {{$patient->date_first_component->format('d.m.Y')}}</span></div>
-            <div style="position:absolute;left:40.00px;top:370.56px" class="cls_006"><span class="cls_006">Препарат:</span></div>
-            <div style="position:absolute;left:125.72px;top:368.56px" class="cls_005"><span class="cls_005">Гам-КОВИД-Вак Комбинированная векторная вакцина для профилактики </span></div>
-            <div style="position:absolute;left:40.00px;top:390.56px" class="cls_005"><span class="cls_005">коронавирусной инфекции, вызываемой вирусом SARS-CoV-2</span></div>
+            <div style="position:absolute;left:40.00px;top:400.56px" class="cls_006"><span class="cls_006">Препарат:</span></div>
+            <div style="position:absolute;left:125.72px;top:398.56px" class="cls_005"><span class="cls_005">Гам-КОВИД-Вак Комбинированная векторная вакцина для профилактики </span></div>
+            <div style="position:absolute;left:40.00px;top:420.56px" class="cls_005"><span class="cls_005">коронавирусной инфекции, вызываемой вирусом SARS-CoV-2</span></div>
 
-            <div style="position:absolute;left:40.00px;top:420.56px" class="cls_006"><span
+            <div style="position:absolute;left:40.00px;top:450.56px" class="cls_006"><span
                     class="cls_006">Производитель:</span><span class="cls_005">  ФГБУ НИЦЭМ ИМ. Н.Ф. ГАМАЛЕИ МИНЗДРАВА РОССИИ</span>
             </div>
-            <div style="position:absolute;left:40.00px;top:450.56px" class="cls_006"><span
+            <div style="position:absolute;left:40.00px;top:475.56px" class="cls_006"><span
                     class="cls_006">Серия:</span><span class="cls_005"> I-180221</span></div>
 
-            <div style="position:absolute;left:40.00px;top:490.56px" class="cls_005"><span
+            <div style="position:absolute;left:40.00px;top:515.56px" class="cls_005"><span
                     class="cls_005" style="font-weight: bold;">Вторая вакцинация</span></div>
-            <div style="position:absolute;left:40.00px;top:522.56px" class="cls_006"><span class="cls_006">Медицинская организация:</span><span
+            <div style="position:absolute;left:40.00px;top:540.56px" class="cls_006"><span class="cls_006">Медицинская организация:</span><span
                     class="cls_005">  {{$clinics[$patient->medical_institution]['ru']}}</span></div>
-            <div style="position:absolute;left:40.00px;top:552.56px" class="cls_006"><span class="cls_006">Дата введения вакцины:</span><span
+            <div style="position:absolute;left:40.00px;top:565.56px" class="cls_006"><span class="cls_006">Дата введения вакцины:</span><span
                     class="cls_005"> {{$patient->date_second_component->format('d.m.Y')}}</span></div>
-            <div style="position:absolute;left:40.00px;top:585.56px" class="cls_006"><span class="cls_006">Препарат:</span></div>
-            <div style="position:absolute;left:125.72px;top: 585.56px" class="cls_005"><span class="cls_005">Гам-КОВИД-Вак Комбинированная векторная вакцина для профилактики </span></div>
+            <div style="position:absolute;left:40.00px;top:595.56px" class="cls_006"><span class="cls_006">Препарат:</span></div>
+            <div style="position:absolute;left:125.72px;top: 592.56px" class="cls_005"><span class="cls_005">Гам-КОВИД-Вак Комбинированная векторная вакцина для профилактики </span></div>
             <div style="position:absolute;left:40.00px;top:610.50px" class="cls_005"><span class="cls_005"> коронавирусной инфекции, вызываемой вирусом SARS-CoV-2</span>
             </div>
             <div style="position:absolute;left:40.00px;top:640px" class="cls_006"><span
@@ -164,20 +166,20 @@
                     class="cls_006">Серия:</span><span class="cls_005"> 100182</span>
             </div>
         @else
-            <div style="position:absolute;left:40.00px;top:286.56px" class="cls_005"><span
+            <div style="position:absolute;left:40.00px;top:310.56px" class="cls_005"><span
                     class="cls_005" style="font-weight: bold;">Первая вакцинация</span></div>
-            <div style="position:absolute;left:40.00px;top:310.56px" class="cls_006"><span class="cls_006">Медицинская организация:</span><span
+            <div style="position:absolute;left:40.00px;top:335.56px" class="cls_006"><span class="cls_006">Медицинская организация:</span><span
                     class="cls_005"> {{$clinics[$patient->medical_institution]['ru']}}</span></div>
-            <div style="position:absolute;left:40.00px;top:365.56px" class="cls_006"><span class="cls_006">Дата введения вакцины:</span><span
+            <div style="position:absolute;left:40.00px;top:390.56px" class="cls_006"><span class="cls_006">Дата введения вакцины:</span><span
                     class="cls_005"> {{$patient->date_first_component->format('d.m.Y')}}</span></div>
-            <div style="position:absolute;left:40.00px;top:395.56px" class="cls_006"><span class="cls_006">Препарат:</span></div>
-            <div style="position:absolute;left:125.72px;top:392.56px" class="cls_005"><span class="cls_005">Гам-КОВИД-Вак Комбинированная векторная вакцина для профилактики </span></div>
-            <div style="position:absolute;left:40.00px;top:415.56px" class="cls_005"><span class="cls_005">коронавирусной инфекции, вызываемой вирусом SARS-CoV-2</span></div>
+            <div style="position:absolute;left:40.00px;top:420.56px" class="cls_006"><span class="cls_006">Препарат:</span></div>
+            <div style="position:absolute;left:125.72px;top:422.56px" class="cls_005"><span class="cls_005">Гам-КОВИД-Вак Комбинированная векторная вакцина для профилактики </span></div>
+            <div style="position:absolute;left:40.00px;top:440.56px" class="cls_005"><span class="cls_005">коронавирусной инфекции, вызываемой вирусом SARS-CoV-2</span></div>
 
-            <div style="position:absolute;left:40.00px;top:450.56px" class="cls_006"><span
+            <div style="position:absolute;left:40.00px;top:475.56px" class="cls_006"><span
                     class="cls_006">Производитель:</span><span class="cls_005">  ФГБУ НИЦЭМ ИМ. Н.Ф. ГАМАЛЕИ МИНЗДРАВА РОССИИ</span>
             </div>
-            <div style="position:absolute;left:40.00px;top:480.56px" class="cls_006"><span
+            <div style="position:absolute;left:40.00px;top:505.56px" class="cls_006"><span
                     class="cls_006">Серия:</span><span class="cls_005"> I-180221</span></div>
 
             <div style="position:absolute;left:40.00px;top:540.56px" class="cls_005"><span
