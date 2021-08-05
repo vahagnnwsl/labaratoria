@@ -1,12 +1,19 @@
 <?php
 
-namespace App\Http\Repositories;
+namespace App\Http\App1\Repositories;
 
 
 use App\Models\Patient;
+use App\Http\Repository;
+use Illuminate\Database\Eloquent\Model;
 
-class PatientRepository
+class PatientRepository extends Repository
 {
+
+    public function __construct(Patient $patient)
+    {
+        parent::__construct($patient);
+    }
 
 
     /**
@@ -14,7 +21,7 @@ class PatientRepository
      */
     public function getAll()
     {
-        return Patient::orderByDesc('created_at')->paginate(20);
+        return $this->model::orderByDesc('created_at')->paginate(20);
     }
 
 

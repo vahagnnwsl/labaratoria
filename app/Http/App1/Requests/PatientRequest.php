@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Requests;
+namespace App\Http\App1\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PatientFrontRequest extends FormRequest
+class PatientRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -33,8 +33,8 @@ class PatientFrontRequest extends FormRequest
             'sex' => 'required||in:male,female',
             'birth_day' => 'required|date_format:Y-m-d',
             'flight_date' => 'sometimes|date_format:Y-m-d|nullable',
-//            'date_and_time_of_sample_collection' => 'required|date_format:Y-m-d\TH:i',
-//            'date_and_time_of_result_report' => 'required|date_format:Y-m-d\TH:i',
+            'date_and_time_of_sample_collection' => 'required|date_format:Y-m-d\TH:i',
+            'date_and_time_of_result_report' => 'required|date_format:Y-m-d\TH:i',
         ];
     }
 }

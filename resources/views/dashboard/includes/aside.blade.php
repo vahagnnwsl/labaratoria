@@ -18,6 +18,13 @@
                         <p>Patients</p>
                     </a>
                 </li>
+                <li class="nav-item ">
+                    <a href="{{route('patients2.index')}}"
+                       class="nav-link {{request()->is('dashboard/2-patients*') ?'active':''}}">
+                        <i class=" fas fa-user-tag nav-icon"></i>
+                        <p>Patients 2</p>
+                    </a>
+                </li>
 
             </ul>
         </nav>

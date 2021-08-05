@@ -46,7 +46,6 @@ class Patient extends Model
         static::created(function ($model) {
             $model->update(['hash' => md5($model->id . $model->creaded_at . time())]);
             QrCode::generate(route('patient.show', $model->hash), storage_path('app/public/qrCode/' . $model->hash . '.svg'));
-
         });
 
     }

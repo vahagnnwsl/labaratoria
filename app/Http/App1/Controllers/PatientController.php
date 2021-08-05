@@ -1,11 +1,15 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\App1\Controllers;
 
-use App\Http\Repositories\PatientRepository;
-use App\Http\Requests\PatientFrontRequest;
+use App\Http\App1\Repositories\PatientRepository;
+use App\Http\App1\Requests\PatientFrontRequest;
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use PDF;
 use Carbon\Carbon;
+use App\Http\Controller;
 
 
 class PatientController extends Controller
@@ -28,11 +32,10 @@ class PatientController extends Controller
 
 
     /**
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return Application|Factory|View
      */
     public function create()
     {
-
         return view('patients.create');
     }
 
@@ -59,7 +62,7 @@ class PatientController extends Controller
 
     /**
      * @param string $hash
-     * @return \Illuminate\Contracts\Foundation\Application|\Illuminate\Contracts\View\Factory|\Illuminate\Contracts\View\View
+     * @return Application|Factory|View
      */
     public function show(string $hash)
     {

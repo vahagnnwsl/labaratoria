@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers\Dashboard;
+namespace App\Http\App1\Controllers\Dashboard;
 
 use App\Exports\PatientExport;
-use App\Http\Controllers\Controller;
+use App\Http\Controller;
 
-use App\Http\Repositories\PatientRepository;
-use App\Http\Requests\PatientRequest;
+use App\Http\App1\Repositories\PatientRepository;
+use App\Http\App1\Requests\PatientRequest;
 use Maatwebsite\Excel\Facades\Excel;
 use PDF;
 
