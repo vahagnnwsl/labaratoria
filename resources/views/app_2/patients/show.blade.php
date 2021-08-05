@@ -1515,7 +1515,7 @@
         </div>
 
         <div class="mt-24">
-            <a href="/" class="button">Закрыть</a>
+            <a href="https://www.gosuslugi.ru" class="button">Закрыть</a>
         </div>
 
     </div>
