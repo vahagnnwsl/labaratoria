@@ -113,7 +113,7 @@
         </div>
         <div style="position:absolute;right:25px;top:150.02px" class="cls_003">
 
-            <img alt=""  style="height: 100px"  src="{{url($domains['domain_2'].$patient->qrCode)}}" />
+            <img alt=""  style="height: 100px"  src="{{url($patient->qrCode)}}" />
         </div>
         <div style="position:absolute;left:40.00px;top:116.75px" class="cls_004"><span class="cls_004" style="font-weight: bold;">№  9780 0000 {{str_split ( $patient->certificate_number, 4 )[0]??'' }} {{str_split ( $patient->certificate_number, 4 )[1]??'' }}</span>
         </div>
