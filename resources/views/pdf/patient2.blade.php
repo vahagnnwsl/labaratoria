@@ -61,7 +61,7 @@
 
         span.cls_005 {
             font-family: DejaVu Sans;
-            font-size: 16.1px;
+            font-size: 14.1px;
             color: rgb(0, 0, 0);
             font-weight: normal;
             font-style: normal;
@@ -170,32 +170,32 @@
                     class="cls_005" style="font-weight: bold;">Первая вакцинация</span></div>
             <div style="position:absolute;left:40.00px;top:335.56px" class="cls_006"><span class="cls_006">Медицинская организация:</span><span
                     class="cls_005"> {{$clinics[$patient->medical_institution]['ru']}}</span></div>
-            <div style="position:absolute;left:40.00px;top:390.56px" class="cls_006"><span class="cls_006">Дата введения вакцины:</span><span
+            <div style="position:absolute;left:40.00px;top:384.56px" class="cls_006"><span class="cls_006">Дата введения вакцины:</span><span
                     class="cls_005"> {{$patient->date_first_component->format('d.m.Y')}}</span></div>
-            <div style="position:absolute;left:40.00px;top:420.56px" class="cls_006"><span class="cls_006">Препарат:</span></div>
-            <div style="position:absolute;left:125.72px;top:422.56px" class="cls_005"><span class="cls_005">Гам-КОВИД-Вак Комбинированная векторная вакцина для профилактики </span></div>
-            <div style="position:absolute;left:40.00px;top:440.56px" class="cls_005"><span class="cls_005">коронавирусной инфекции, вызываемой вирусом SARS-CoV-2</span></div>
+            <div style="position:absolute;left:40.00px;top:413.56px" class="cls_006"><span class="cls_006">Препарат:</span></div>
+            <div style="position:absolute;left:125.72px;top:415.56px" class="cls_005"><span class="cls_005">Гам-КОВИД-Вак Комбинированная векторная вакцина для профилактики </span></div>
+            <div style="position:absolute;left:40.00px;top:435.56px" class="cls_005"><span class="cls_005">коронавирусной инфекции, вызываемой вирусом SARS-CoV-2</span></div>
 
-            <div style="position:absolute;left:40.00px;top:475.56px" class="cls_006"><span
+            <div style="position:absolute;left:40.00px;top:462.56px" class="cls_006"><span
                     class="cls_006">Производитель:</span><span class="cls_005">  ФГБУ НИЦЭМ ИМ. Н.Ф. ГАМАЛЕИ МИНЗДРАВА РОССИИ</span>
             </div>
-            <div style="position:absolute;left:40.00px;top:505.56px" class="cls_006"><span
+            <div style="position:absolute;left:40.00px;top:490.56px" class="cls_006"><span
                     class="cls_006">Серия:</span><span class="cls_005"> I-180221</span></div>
 
-            <div style="position:absolute;left:40.00px;top:540.56px" class="cls_005"><span
+            <div style="position:absolute;left:40.00px;top:530.56px" class="cls_005"><span
                     class="cls_005" style="font-weight: bold;">Вторая вакцинация</span></div>
-            <div style="position:absolute;left:40.00px;top:570.56px" class="cls_006"><span class="cls_006">Медицинская организация:</span><span
+            <div style="position:absolute;left:40.00px;top:563.56px" class="cls_006"><span class="cls_006">Медицинская организация:</span><span
                     class="cls_005">  {{$clinics[$patient->medical_institution]['ru']}}</span></div>
-            <div style="position:absolute;left:40.00px;top:625.56px" class="cls_006"><span class="cls_006">Дата введения вакцины:</span><span
+            <div style="position:absolute;left:40.00px;top:613.56px" class="cls_006"><span class="cls_006">Дата введения вакцины:</span><span
                     class="cls_005"> {{$patient->date_second_component->format('d.m.Y')}}</span></div>
-            <div style="position:absolute;left:40.00px;top:660.56px" class="cls_006"><span class="cls_006">Препарат:</span></div>
-            <div style="position:absolute;left:125.72px;top: 658.56px" class="cls_005"><span class="cls_005">Гам-КОВИД-Вак Комбинированная векторная вакцина для профилактики </span></div>
-            <div style="position:absolute;left:40.00px;top:680.50px" class="cls_005"><span class="cls_005"> коронавирусной инфекции, вызываемой вирусом SARS-CoV-2</span>
+            <div style="position:absolute;left:40.00px;top:641.56px" class="cls_006"><span class="cls_006">Препарат:</span></div>
+            <div style="position:absolute;left:125.72px;top: 641.56px" class="cls_005"><span class="cls_005">Гам-КОВИД-Вак Комбинированная векторная вакцина для профилактики </span></div>
+            <div style="position:absolute;left:40.00px;top:666.50px" class="cls_005"><span class="cls_005"> коронавирусной инфекции, вызываемой вирусом SARS-CoV-2</span>
             </div>
-            <div style="position:absolute;left:40.00px;top:710.56px" class="cls_006"><span
+            <div style="position:absolute;left:40.00px;top:695.56px" class="cls_006"><span
                     class="cls_006">Производитель:</span><span class="cls_005">  ФГБУ НИЦЭМ ИМ. Н.Ф. ГАМАЛЕИ МИНЗДРАВА РОССИИ</span>
             </div>
-            <div style="position:absolute;left:40.00px;top:740.56px" class="cls_006"><span
+            <div style="position:absolute;left:40.00px;top:725.56px" class="cls_006"><span
                     class="cls_006">Серия:</span><span class="cls_005"> 100182</span>
             </div>
         @endif
@@ -209,9 +209,9 @@
     </div>
     <div style="position:absolute;left:40.00px;top:81.35px" class="cls_002"><span class="cls_002" style="font-weight: bold;letter-spacing: -1px">Certificate of COVID-19 Vaccination</span>
     </div>
-    <div style="position:absolute;right:5px;top:100.02px" class="cls_003"><span class="cls_003" style="font-weight: bold;letter-spacing: -1px">QR code of the Certificate</span>
-    </div>
-    <div style="position:absolute;right:25px;top:150.02px" class="cls_003">
+    <div style="position:absolute;right:5px;top:100.02px" class="cls_003"><span class="cls_003" style="font-weight: bold;letter-spacing: -1px">QR code of the </span></div>
+    <div style="position:absolute;right:17px;top:116.02px" class="cls_003"><span class="cls_003" style="font-weight: bold;letter-spacing: -1px"> Certificate </span></div>
+    <div style="position:absolute;right:10px;top:143.02px" class="cls_003">
 
         <img alt=""  style="height: 100px"  src="{{url($patient->qrCode)}}" />
     </div>
@@ -236,32 +236,32 @@
         <div style="position:absolute;left:40.00px;top:480.56px" class="cls_006"><span class="cls_006">Healthcare facility:</span><span class="cls_005"> {{$clinics[$patient->medical_institution]['en']}}</span></div>
         <div style="position:absolute;left:40.00px;top:513.56px" class="cls_006"><span class="cls_006">Date:</span><span class="cls_005"> {{$patient->date_first_component->format('d.m.Y')}}</span></div>
         <div style="position:absolute;left:40.00px;top:538.56px" class="cls_006"><span class="cls_006">Vaccine:</span><span class="cls_005"> Gam-COVID-Vac (“Sputnik V”), combined heterologous recombinant adenovirus(rAd)-based vaccine for prophylaxis of coronavirus infectious diseases caused by SARS-CoV-2</span></div>
-        <div style="position:absolute;left:40.00px;top:615.56px" class="cls_006"><span class="cls_006">Manufacturer:</span><span class="cls_005">  The Federal Government Budgetary Institution “National Research Center for Epidemiology and Microbiology named after Honorary Academician N.F. Gamaleya” of the Ministry of Health of the Russian Federation</span></div>
-        <div style="position:absolute;left:40.00px;top:692.56px" class="cls_006"><span class="cls_006">Serial No of vaccine:</span><span class="cls_005"> I-180221</span></div>
+        <div style="position:absolute;left:40.00px;top:590.56px" class="cls_006"><span class="cls_006">Manufacturer:</span><span class="cls_005">  The Federal Government Budgetary Institution “National Research Center for Epidemiology and Microbiology named after Honorary Academician N.F. Gamaleya” of the Ministry of Health of the Russian Federation</span></div>
+        <div style="position:absolute;left:40.00px;top:665.56px" class="cls_006"><span class="cls_006">Serial No of vaccine:</span><span class="cls_005"> I-180221</span></div>
 
-        <div style="position:absolute;left:40.00px;top:730.56px" class="cls_005"><span class="cls_005" style="font-weight: bold;">Second vaccine dose</span></div>
-        <div style="position:absolute;left:40.00px;top:762.56px" class="cls_006"><span class="cls_006">Healthcare facility:</span><span class="cls_005"> {{$clinics[$patient->medical_institution]['en']}}</span></div>
-        <div style="position:absolute;left:40.00px;top:788.56px" class="cls_006"><span class="cls_006">Date:</span><span class="cls_005"> {{$patient->date_second_component->format('d.m.Y')}}</span></div>
-        <div style="position:absolute;left:40.00px;top:815.56px" class="cls_006"><span class="cls_006">Vaccine:</span><span class="cls_005"> Gam-COVID-Vac (“Sputnik V”), combined heterologous recombinant adenovirus(rAd)-based vaccine for prophylaxis of coronavirus infectious diseases caused by SARS-CoV-2</span></div>
-        <div style="position:absolute;left:40.00px;top:892.56px" class="cls_006"><span class="cls_006">Manufacturer:</span><span class="cls_005">  The Federal Government Budgetary Institution “National Research Center for Epidemiology and Microbiology named after Honorary Academician N.F. Gamaleya” of the Ministry of Health of the Russian Federation</span></div>
-        <div style="position:absolute;left:40.00px;top:970.56px" class="cls_006"><span class="cls_006">Serial No of vaccine:</span><span class="cls_005"> I-100182</span></div>
+        <div style="position:absolute;left:40.00px;top:700.56px" class="cls_005"><span class="cls_005" style="font-weight: bold;">Second vaccine dose</span></div>
+        <div style="position:absolute;left:40.00px;top:730.56px" class="cls_006"><span class="cls_006">Healthcare facility:</span><span class="cls_005"> {{$clinics[$patient->medical_institution]['en']}}</span></div>
+        <div style="position:absolute;left:40.00px;top:758.56px" class="cls_006"><span class="cls_006">Date:</span><span class="cls_005"> {{$patient->date_second_component->format('d.m.Y')}}</span></div>
+        <div style="position:absolute;left:40.00px;top:785.56px" class="cls_006"><span class="cls_006">Vaccine:</span><span class="cls_005"> Gam-COVID-Vac (“Sputnik V”), combined heterologous recombinant adenovirus(rAd)-based vaccine for prophylaxis of coronavirus infectious diseases caused by SARS-CoV-2</span></div>
+        <div style="position:absolute;left:40.00px;top:837.56px" class="cls_006"><span class="cls_006">Manufacturer:</span><span class="cls_005">  The Federal Government Budgetary Institution “National Research Center for Epidemiology and Microbiology named after Honorary Academician N.F. Gamaleya” of the Ministry of Health of the Russian Federation</span></div>
+        <div style="position:absolute;left:40.00px;top:914.56px" class="cls_006"><span class="cls_006">Serial No of vaccine:</span><span class="cls_005"> I-100182</span></div>
 
     @else
 
 
     <div style="position:absolute;left:40.00px;top:445.56px" class="cls_005"><span class="cls_005" style="font-weight: bold;">First vaccine dose</span></div>
-    <div style="position:absolute;left:40.00px;top:480.56px" class="cls_006"><span class="cls_006">Healthcare facility:</span><span class="cls_005"> {{$clinics[$patient->medical_institution]['en']}}</span></div>
-    <div style="position:absolute;left:40.00px;top:540.56px" class="cls_006"><span class="cls_006">Date:</span><span class="cls_005"> {{$patient->date_first_component->format('d.m.Y')}}</span></div>
-    <div style="position:absolute;left:40.00px;top:572.56px" class="cls_006"><span class="cls_006">Vaccine:</span><span class="cls_005"> Gam-COVID-Vac (“Sputnik V”), combined heterologous recombinant adenovirus(rAd)-based vaccine for prophylaxis of coronavirus infectious diseases caused by SARS-CoV-2</span></div>
-    <div style="position:absolute;left:40.00px;top:650.56px" class="cls_006"><span class="cls_006">Manufacturer:</span><span class="cls_005">  The Federal Government Budgetary Institution “National Research Center for Epidemiology and Microbiology named after Honorary Academician N.F. Gamaleya” of the Ministry of Health of the Russian Federation</span></div>
-    <div style="position:absolute;left:40.00px;top:725.56px" class="cls_006"><span class="cls_006">Serial No of vaccine:</span><span class="cls_005"> I-180221</span></div>
+    <div style="position:absolute;left:40.00px;top:475.56px" class="cls_006"><span class="cls_006">Healthcare facility:</span><span class="cls_005"> {{$clinics[$patient->medical_institution]['en']}}</span></div>
+    <div style="position:absolute;left:40.00px;top:525.56px" class="cls_006"><span class="cls_006">Date:</span><span class="cls_005"> {{$patient->date_first_component->format('d.m.Y')}}</span></div>
+    <div style="position:absolute;left:40.00px;top:552.56px" class="cls_006"><span class="cls_006">Vaccine:</span><span class="cls_005"> Gam-COVID-Vac (“Sputnik V”), combined heterologous recombinant adenovirus(rAd)-based vaccine for prophylaxis of coronavirus infectious diseases caused by SARS-CoV-2</span></div>
+    <div style="position:absolute;left:40.00px;top:601.56px" class="cls_006"><span class="cls_006">Manufacturer:</span><span class="cls_005">  The Federal Government Budgetary Institution “National Research Center for Epidemiology and Microbiology named after Honorary Academician N.F. Gamaleya” of the Ministry of Health of the Russian Federation</span></div>
+    <div style="position:absolute;left:40.00px;top:670.56px" class="cls_006"><span class="cls_006">Serial No of vaccine:</span><span class="cls_005"> I-180221</span></div>
 
-    <div style="position:absolute;left:40.00px;top:762.56px" class="cls_005"><span class="cls_005" style="font-weight: bold;">Second vaccine dose</span></div>
-    <div style="position:absolute;left:40.00px;top:795.56px" class="cls_006"><span class="cls_006">Healthcare facility:</span><span class="cls_005"> {{$clinics[$patient->medical_institution]['en']}}</span></div>
-    <div style="position:absolute;left:40.00px;top:850.56px" class="cls_006"><span class="cls_006">Date:</span><span class="cls_005"> {{$patient->date_second_component->format('d.m.Y')}}</span></div>
-    <div style="position:absolute;left:40.00px;top:875.56px" class="cls_006"><span class="cls_006">Vaccine:</span><span class="cls_005"> Gam-COVID-Vac (“Sputnik V”), combined heterologous recombinant adenovirus(rAd)-based vaccine for prophylaxis of coronavirus infectious diseases caused by SARS-CoV-2</span></div>
-    <div style="position:absolute;left:40.00px;top:955.56px" class="cls_006"><span class="cls_006">Manufacturer:</span><span class="cls_005">  The Federal Government Budgetary Institution “National Research Center for Epidemiology and Microbiology named after Honorary Academician N.F. Gamaleya” of the Ministry of Health of the Russian Federation</span></div>
-    <div style="position:absolute;left:40.00px;top:1040.56px" class="cls_006"><span class="cls_006">Serial No of vaccine:</span><span class="cls_005"> I-100182</span></div>
+    <div style="position:absolute;left:40.00px;top:712.56px" class="cls_005"><span class="cls_005" style="font-weight: bold;">Second vaccine dose</span></div>
+    <div style="position:absolute;left:40.00px;top:742.56px" class="cls_006"><span class="cls_006">Healthcare facility:</span><span class="cls_005"> {{$clinics[$patient->medical_institution]['en']}}</span></div>
+    <div style="position:absolute;left:40.00px;top:789.56px" class="cls_006"><span class="cls_006">Date:</span><span class="cls_005"> {{$patient->date_second_component->format('d.m.Y')}}</span></div>
+    <div style="position:absolute;left:40.00px;top:816.56px" class="cls_006"><span class="cls_006">Vaccine:</span><span class="cls_005"> Gam-COVID-Vac (“Sputnik V”), combined heterologous recombinant adenovirus(rAd)-based vaccine for prophylaxis of coronavirus infectious diseases caused by SARS-CoV-2</span></div>
+    <div style="position:absolute;left:40.00px;top:863.56px" class="cls_006"><span class="cls_006">Manufacturer:</span><span class="cls_005">  The Federal Government Budgetary Institution “National Research Center for Epidemiology and Microbiology named after Honorary Academician N.F. Gamaleya” of the Ministry of Health of the Russian Federation</span></div>
+    <div style="position:absolute;left:40.00px;top:935.56px" class="cls_006"><span class="cls_006">Serial No of vaccine:</span><span class="cls_005"> I-100182</span></div>
     @endif
 </div>
 </div>
