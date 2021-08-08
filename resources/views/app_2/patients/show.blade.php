@@ -1446,7 +1446,15 @@
                     <span class="status-value hide not-found"></span>
                     <span class="status-value cert-name">Действителен</span>
                 </div>
-                <h4 class="title-h4 white status-title mt-12"><span class="num-symbol">№</span> <span class="unrz">9780 0000  {{str_split ( $patient->certificate_number, 4 )[0]??'' }} {{str_split ( $patient->certificate_number, 4 )[1]??'' }}</span>
+                <h4 class="title-h4 white status-title mt-12">
+                    <span class="num-symbol">№</span>
+                    <span class="unrz">
+                         <span>9780</span>
+                         <span>0000</span>
+                        <span>{{str_split ( $patient->certificate_number, 4 )[0]??'' }}</span>
+                         <span>{{str_split ( $patient->certificate_number, 4 )[1]??'' }}</span>
+
+                    </span>
                 </h4>
             </div>
         </div>
@@ -1491,7 +1499,7 @@
                     </svg>
                 </div>
                 <div class="small-text gray mr-4">Действует до:</div>
-                <div class="small-text gray">21.04.2022</div>
+                <div class="small-text gray">{{$patient->date_second_component->addYear(1)->format('d.m.Y')}}</div>
             </div>
         </div>
 
