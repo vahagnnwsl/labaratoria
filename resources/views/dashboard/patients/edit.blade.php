@@ -45,16 +45,16 @@
                                             @enderror
                                         </div>
 
-                                        <div class="form-group">
-                                            <label for="whats_app">Whats app *</label>
-                                            <input type="text" id="whats_app" class="form-control" name="whats_app"
-                                                   value="{{$patient->whats_app}}">
-                                            @error('whats_app')
-                                            <span class="invalid-feedback d-block" role="alert">
-                                                 <strong>{{ $message }}</strong>
-                                            </span>
-                                            @enderror
-                                        </div>
+{{--                                        <div class="form-group">--}}
+{{--                                            <label for="whats_app">Whats app *</label>--}}
+{{--                                            <input type="text" id="whats_app" class="form-control" name="whats_app"--}}
+{{--                                                   value="{{$patient->whats_app}}">--}}
+{{--                                            @error('whats_app')--}}
+{{--                                            <span class="invalid-feedback d-block" role="alert">--}}
+{{--                                                 <strong>{{ $message }}</strong>--}}
+{{--                                            </span>--}}
+{{--                                            @enderror--}}
+{{--                                        </div>--}}
 
                                         <div class="form-group">
                                             <label for="sex">Sex * </label>

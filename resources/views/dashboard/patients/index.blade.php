@@ -87,9 +87,9 @@
                                     <td>
                                         {{$patient->full_name}}
                                     </td>
-                                    <td>
-                                        {{$patient->whats_app}}
-                                    </td>
+{{--                                    <td>--}}
+{{--                                        {{$patient->whats_app}}--}}
+{{--                                    </td>--}}
                                     <td>
                                         {{$patient->sex}}
                                     </td>

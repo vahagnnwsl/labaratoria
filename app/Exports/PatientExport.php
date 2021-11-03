@@ -15,7 +15,7 @@ class PatientExport implements FromCollection, WithMapping, WithHeadings
         return [
             'Hash',
             'Full name',
-            'Whats app',
+//            'Whats app',
             'Sex',
             'Passport number',
             'Flight',
@@ -42,7 +42,7 @@ class PatientExport implements FromCollection, WithMapping, WithHeadings
         return [
             $patient->hash,
             $patient->full_name,
-            $patient->whats_app,
+//            $patient->whats_app,
             $patient->sex,
             $patient->passport_number,
             $patient->flight,
