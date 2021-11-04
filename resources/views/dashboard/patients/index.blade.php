@@ -46,9 +46,9 @@
                                 <th style="width: 10%">
                                     Name
                                 </th>
-                                <th style="width: 10%">
-                                    Whats app
-                                </th>
+{{--                                <th style="width: 10%">--}}
+{{--                                    Whats app--}}
+{{--                                </th>--}}
                                 <th style="width: 5%">
                                     Sex
                                 </th>
